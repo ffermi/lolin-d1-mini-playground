@@ -13,10 +13,12 @@ void setup()
 /* Loop Function, executing for every device cycle */
 void loop()
 {
-    led.setColor(Color::RED);
-    delay(500);
     led.setColor(Color::GREEN);
     delay(500);
-    led.setColor(Color::BLUE);
+    led.setColor(Color::WHITE);
+    delay(500);
+    led.setColor(Color::RED);
+    delay(500);
+    led.setColor(Color::OFF);
     delay(500);
 }
