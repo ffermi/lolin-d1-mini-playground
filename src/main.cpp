@@ -3,14 +3,12 @@
 
 Led led(D5, D6, D7); 
 
-/* Init Function, execute at every device start */
 void setup()
 {
     Serial.begin(9600);
     led.setup();
 }
 
-/* Loop Function, executing for every device cycle */
 void loop()
 {
     led.setColor(Color::GREEN);
